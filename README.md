@@ -201,9 +201,10 @@ It shows how technical teams can align security processes with system reliabilit
 
 In this phase, an insecure Windows Server is provisioned to simulate the server team's environment. After creating vulnerabilities, an authenticated scan is performed, and the results are exported for future remediation steps.  
 
-<img width="635" alt="image" src="https://github.com/user-attachments/assets/937cccbd-36bb-4445-97b9-e915085cda81" style="border: 2px solid black;">
-
+<img width="906" height="813" alt="Screenshot 2025-10-04 at 4 18 49 AM" src="https://github.com/user-attachments/assets/402894a5-676e-492e-83ed-4f03a7a34ccf" />
 [Scan 1 - Initial Scan](https://drive.google.com/file/d/1RBPVj_azKJMwmRZ8QILlb4hxIjQU3wQ7/view?usp=drive_link)
+
+
 
 
 
@@ -415,7 +416,7 @@ It demonstrates the practical application of **secure configuration**, **automat
 The server team used a PowerShell script to remove outdated Wireshark. A follow-up scan confirmed successful remediation.  
 [Wireshark Removal Script](https://github.com/joshmadakor1/lognpacific-public/blob/main/automation/remediation-wireshark-uninstall.ps1)  
 
-<img width="634" alt="image" src="https://github.com/user-attachments/assets/7b4f9ab2-d230-4458-ac0f-c0ff070ae79a">
+<img width="1544" height="1478" alt="image" src="https://github.com/user-attachments/assets/399416dd-929d-44bc-95ba-848b9128c74e" />
 
 [Scan 2 - Third Party Software Removal](https://drive.google.com/file/d/1UiwPPTtuSZKk02hiMyXf31pXUIeC5EWt/view?usp=drive_link)
 
@@ -426,28 +427,24 @@ The server team used PowerShell scripts to remediate insecure protocols and ciph
 [PowerShell: Insecure Protocols Remediation](https://github.com/joshmadakor1/lognpacific-public/blob/main/automation/toggle-protocols.ps1)
 [PowerShell: Insecure Ciphers Remediation](https://github.com/joshmadakor1/lognpacific-public/blob/main/automation/toggle-cipher-suites.ps1)
 
-<img width="630" alt="image" src="https://github.com/user-attachments/assets/0e96120d-8ec9-4f76-8e42-79c752200010">
+<img width="1558" height="850" alt="image" src="https://github.com/user-attachments/assets/0f03abf1-edc2-4eb0-865f-b90ac96c46a2" />
 
 [Scan 3 - Ciphersuites and Protocols](https://drive.google.com/file/d/1Qc6-ezQvwReCGUZNtnva0kCZo_-zW-Sm/view?usp=drive_link)
 
 
-#### Remediation Round 3: Guest Account Group Membership
+#### Remediation Round 3: Guest Account Group Membership & Windows OS Updates
 
-The server team removed the guest account from the administrator group. A new scan confirmed remediation, and the results were exported for comparison.  
+The server team removed the guest account from the administrator group. A new scan confirmed remediation, and the results were exported for comparison.
+Windows updates were re-enabled and applied until the system was fully up to date. A final scan verified the changes  
 [PowerShell: Guest Account Group Membership Remediation](https://github.com/joshmadakor1/lognpacific-public/blob/main/automation/toggle-guest-local-administrators.ps1)  
 
-<img width="627" alt="image" src="https://github.com/user-attachments/assets/870a3eac-3398-44fe-91c0-96f3c2578df4">
-
-[Scan 4 - Guest Account Group Removal](https://drive.google.com/file/d/1jVgikjfrV1YjOcL3QRT_oUB0Y82w22V7/view?usp=drive_link)
+<img width="1558" height="774" alt="image" src="https://github.com/user-attachments/assets/410d7cb9-45cb-4242-bf6e-2a3b57974d9e" />
 
 
-#### Remediation Round 4: Windows OS Updates
+[Scan 4 - Post Windows Updates and  Guest Account Group Removal](https://drive.google.com/file/d/1jVgikjfrV1YjOcL3QRT_oUB0Y82w22V7/view?usp=drive_link)
 
-Windows updates were re-enabled and applied until the system was fully up to date. A final scan verified the changes  
 
-<img width="627" alt="image" src="https://github.com/user-attachments/assets/870a3eac-3398-44fe-91c0-96f3c2578df4">
 
-[Scan 5 - Post Windows Updates](https://drive.google.com/file/d/1tmDjeHl5uiGitRwWy8kFRi33q-nGi1Zt/view?usp=drive_link)
 
 ---
 
@@ -455,7 +452,8 @@ Windows updates were re-enabled and applied until the system was fully up to dat
 
 The remediation process reduced total vulnerabilities by 80%, from 30 to 6. Critical vulnerabilities were resolved by the second scan (100%), and high vulnerabilities dropped by 90%. Mediums were reduced by 76%. In an actual production environment, asset criticality would further guide future remediation efforts.  
 
-<img width="1920" alt="image" src="https://github.com/user-attachments/assets/51f0aae8-7f36-4d90-b29f-5257e57155f9">
+<img width="1206" height="754" alt="image" src="https://github.com/user-attachments/assets/5cd9b2da-e38c-4017-be79-38cdcc6871dc" />
+
 
 [Remediation Data](https://docs.google.com/spreadsheets/d/1FTtFfZYmFsNLU6pm8nTzsKyKE-d2ftXzX_DPwcnFNfA/edit?gid=0#gid=0)
 
