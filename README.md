@@ -50,9 +50,62 @@ This phase focuses on drafting a Vulnerability Management Policy as a starting p
 
 In this phase, a meeting with the server team introduces the draft Vulnerability Management Policy and assesses their capability to meet remediation timelines. Feedback leads to adjustments, like extending the critical remediation window from 48 hours to one week, ensuring collaborative implementation.
 
-<a href='https://youtu.be/8g6uafc6LjE' target="_"><img width="600" alt="image" src="https://github.com/user-attachments/assets/549d21f4-26c2-412d-9117-d7b6835aedbf"></a>
 
-[YouTube Video: Stakeholder Policy Buy-In Meeting](https://youtu.be/8g6uafc6LjE)
+# 💬 Policy Discussion: Remediation Timelines
+
+> **Context:**  
+> A brief professional conversation between **Josh** and **Jimmy** discussing adjustments to a new vulnerability remediation policy.  
+> This dialogue demonstrates collaborative problem-solving, policy negotiation, and clear communication within an IT security environment.
+
+---
+
+## 🗣️ Dialogue
+
+**Josh:**  
+Hey, good morning, Jimmy. How’s everything been lately? I know everyone’s been pretty busy these last few weeks.  
+
+**Jimmy:**  
+Good morning, Josh. Yeah, it’s been a bit hectic, but we’re hanging in there — thanks for asking. I had a chance to read through the policy draft, and overall it makes sense. However, with our current staffing, we can’t meet the aggressive remediation timelines — especially the 48-hour window for critical vulnerabilities.  
+
+**Josh:**  
+Yeah, I totally understand. It is a bit aggressive, especially to start. Maybe we can extend the critical window to one week for now? That might be a good compromise, and we can reserve the 48-hour response for truly severe zero-day vulnerabilities.  
+
+**Jimmy:**  
+That sounds reasonable. We appreciate the flexibility. Could we also have a bit of leeway in the beginning as we get used to the remediation and patching process — maybe for the first few months?  
+
+**Josh:**  
+Absolutely. After the policy is finalized, we’ll officially start the program, but we’re planning to give all departments about six months to adjust and get comfortable with the new process. Does that sound fair?  
+
+**Jimmy:**  
+That’s perfect, Josh. We’ll do our best. I really appreciate you including us in the decision-making process — it helps us feel like we’re part of the solution.  
+
+**Josh:**  
+Of course. We’re all in this together. Thanks for working with us.  
+
+**Jimmy:**  
+No problem — and thanks for keeping it short!  
+
+**Josh:**  
+Yeah, those are my favorite kinds of meetings. Take care!  
+
+**Jimmy:**  
+See you later.  
+
+---
+
+## 🧩 Key Takeaways
+
+- 🤝 **Collaboration:** Both parties worked together to find a realistic solution.  
+- ⏱️ **Practical Adjustment:** Extended remediation timelines to match staffing capacity.  
+- 🧠 **Strategic Flexibility:** Introduced phased implementation and exception handling.  
+- 💬 **Positive Communication:** Demonstrated mutual respect and teamwork in policy planning.  
+
+---
+
+### 🧾 Summary
+
+This discussion reflects real-world communication in cybersecurity and IT policy environments — balancing **security requirements** with **operational feasibility**, while maintaining **constructive dialogue** between technical and management teams.
+
 
 ---
 
@@ -70,9 +123,77 @@ After gathering feedback from the server team, the policy is revised, addressing
 
 The team collaborates with the server team to initiate scheduled credential scans. A compromise is reached to scan a single server first, monitoring resource impact, and using just-in-time Active Directory credentials for secure, controlled access.  
 
-<a href='https://youtu.be/lg068WA4SKM' target="_"><img width="600" alt="image" src="https://github.com/user-attachments/assets/31fe8d0f-636b-475b-8d5a-a2795c183f86"></a>
+# 🧪 Vulnerability Scanning Discussion
 
-[YouTube Video: Initial Discovery Scan](https://youtu.be/lg068WA4SKM)
+> **Context:**  
+> A conversation between **Josh** and **Jimmy** about initiating scheduled credentialed vulnerability scans following the implementation of a new vulnerability management policy.  
+> This dialogue demonstrates security planning, risk communication, and operational collaboration in an enterprise IT setting.
+
+---
+
+## 🗣️ Dialogue
+
+**Josh:**  
+Morning, Jimmy. I heard you’re ready to conduct some scans.  
+
+**Jimmy:**  
+Yep! Now that our vulnerability management policy is in place, I wanted to start scheduling some credentialed scans of your environment.  
+
+**Josh:**  
+Sounds good to me. What’s involved, and how can we help?  
+
+**Jimmy:**  
+We’re planning to schedule weekly scans of the server infrastructure. We estimate it’ll take about 4–6 hours to scan all 200 assets.  
+We’ll need you to provide some administrative credentials so the scan engine can remotely log into the targets for a deeper assessment.  
+
+**Josh:**  
+Whoa, hold on — what does scanning actually entail? I’m a bit worried about resource utilization.  
+Also, you want admin credentials to all 200 machines? That doesn’t sound safe.  
+
+**Jimmy:**  
+Those are valid concerns. The scan engine basically sends different types of traffic to the servers to check for the presence of known vulnerabilities.  
+This includes looking into the registry, identifying outdated software, and checking for insecure protocols or cipher suites — that kind of thing.  
+That’s why credentials are needed, to give the scan deeper visibility.  
+
+**Josh:**  
+I see. As long as it doesn’t bring the servers offline, we should be okay.  
+
+**Jimmy:**  
+Absolutely. Let’s start small — we can scan a single server first and monitor resource utilization.  
+
+**Josh:**  
+Not a bad idea.  
+
+**Jimmy:**  
+Also, for credentials, could you set up something in Active Directory for us? Maybe dedicated AD credentials that remain disabled until the scan begins, then enabled during the scan, and disabled again after — kind of a just-in-time access approach.  
+
+**Josh:**  
+That sounds good. I’ll ask Susan to start on the automation for account provisioning.  
+
+**Jimmy:**  
+Awesome. Talk soon!  
+
+**Josh:**  
+Sounds good. I’ll get back to you once the credentials are set up. See you later.  
+
+**Jimmy:**  
+See you later.  
+
+---
+
+## 🧩 Key Takeaways
+
+- 🧠 **Security Awareness:** Addressed concerns about administrative credentials and resource impact.  
+- 🔐 **Controlled Access:** Implemented a just-in-time Active Directory account strategy.  
+- 🕒 **Incremental Rollout:** Began with limited-scope testing before full deployment.  
+- 🤝 **Collaboration:** Demonstrated clear communication between teams to ensure safe and effective vulnerability management.  
+
+---
+
+### 🧾 Summary
+
+This discussion highlights best practices in **vulnerability management** — including credential handling, operational transparency, and phased implementation.  
+It shows how technical teams can align security processes with system reliability and stakeholder trust.
 
 ---
 
@@ -114,9 +235,95 @@ The server team received remediation scripts and scan reports to address key vul
 
 The server team reviewed vulnerability scan results, identifying outdated software, insecure accounts, and deprecated protocols. The remediation packages were prepared for submission to the Change Control Board (CAB). 
 
-<a href="https://youtu.be/0tjjFewxSNw" target="_"><img width="600" src="https://github.com/user-attachments/assets/03027c66-5f7c-42d0-b6dd-09d053c040b1"/></a>
+# 🧰 Vulnerability Findings & Remediation Discussion
 
-[Meeting Video](https://youtu.be/0tjjFewxSNw)
+> **Context:**  
+> A conversation between **Josh** and **Jimmy** following a vulnerability scan.  
+> They review scan performance, discuss findings, and plan remediation strategies — emphasizing collaboration, technical insight, and responsible vulnerability management.
+
+---
+
+## 🗣️ Dialogue
+
+**Josh:**  
+Morning, Jimmy. How are you doing?  
+
+**Jimmy:**  
+Not bad for a Monday. And yourself?  
+
+**Josh:**  
+Still alive, so I can’t complain.  
+Before we get into the vulnerabilities, how did the actual scan go on your end? Any outages or performance issues?  
+
+**Jimmy:**  
+The scan went well. We were monitoring everything closely, and aside from all the open connections, we wouldn’t have even known a scan was happening.  
+
+**Josh:**  
+That’s good news — just what I expected. We’ll keep monitoring, but I don’t foresee any resource utilization issues.  
+Mind if I dive into the vulnerability findings?  
+
+**Jimmy:**  
+Absolutely, go ahead.  
+
+**Josh:**  
+Cool. I’ll share my screen really quick.  
+So, the majority of these vulnerabilities are from **Wireshark** being installed — it’s just very out of date.  
+One interesting thing I found: the **local guest account** on several servers is actually part of the **Administrators group**, which shouldn’t be the case.  
+
+Some other vulnerabilities might be automatically resolved by **Windows Update**, like this **Microsoft Edge (Chromium)** one.  
+We can also ignore the **self-signed certificate** alert — that’s expected.  
+
+The main issues we should focus on are:  
+- ⚙️ **Deprecated cipher suites (medium-strength)**  
+- ⚙️ **Deprecated TLS protocols (1.0 and 1.1)**  
+- ⚙️ **Outdated Wireshark installations**  
+- ⚙️ **Guest account with admin privileges**  
+
+**Jimmy:**  
+Very interesting. The good news is that most of our servers likely have the same vulnerabilities, which should make remediation easier across the board.  
+
+**Josh:**  
+Exactly — a uniform rollout helps. Do you foresee any problems fixing the cipher suites or disabling those insecure protocols?  
+
+**Jimmy:**  
+Highly doubt it. We’ll run it through the next **Change Control Board**.  
+Uninstalling Wireshark and fixing the guest account won’t be an issue either — those shouldn’t be on production servers anyway.  
+I’ll coordinate with our **CIS admins** about that.  
+
+**Josh:**  
+Perfect. I’ll start building **remediation packages** to streamline the fixes.  
+
+**Jimmy:**  
+Sounds great. Oh — do you already have something in place to handle Windows Update-related vulnerabilities?  
+
+**Josh:**  
+Yes, we have **Patch Management** in place. Updates should be applied automatically by next week.  
+
+**Jimmy:**  
+Excellent. I’ll get started on researching the best approach to remediate these findings and follow up before the next Change Control Board.  
+
+**Josh:**  
+Sounds good. Talk to you soon.  
+
+**Jimmy:**  
+Cool, talk to you soon.  
+
+---
+
+## 🧩 Key Takeaways
+
+- 🧠 **Technical Insight:** Identified specific vulnerabilities and prioritized actionable ones.  
+- 🧰 **Operational Efficiency:** Streamlined remediation through centralized patching and automation.  
+- 🔐 **Security Hygiene:** Addressed privilege escalation risks and outdated software.  
+- 🤝 **Collaboration:** Coordinated across teams for remediation and governance approval.  
+
+---
+
+### 🧾 Summary
+
+This discussion demonstrates **effective vulnerability management communication**, combining **technical precision** with **cross-team coordination**.  
+It highlights real-world cybersecurity operations — from vulnerability analysis to remediation planning — with a focus on collaboration, transparency, and continuous improvement.
+
 
 ---
 
@@ -124,9 +331,81 @@ The server team reviewed vulnerability scan results, identifying outdated softwa
 
 The Change Control Board (CAB) reviewed and approved the plan to remove insecure protocols and cipher suites. The plan included a rollback script and a tiered deployment approach.  
 
-<a href="https://youtu.be/zOFPkTa9kY8" target="_"><img width="600" src="https://github.com/user-attachments/assets/07164e63-fbce-471a-b469-29a6d41b7bb8"/></a>
+# 🛡️ Vulnerability Remediation Planning – CAP Meeting Discussion
 
-[Meeting Video](https://youtu.be/zOFPkTa9kY8)
+> **Context:**  
+> A conversation during a **Change Advisory Panel (CAP) meeting** between the **Risk** and **Infrastructure** teams.  
+> The discussion focuses on the **removal of insecure protocols and cipher suites**, implementation strategy, rollback planning, and automation through PowerShell scripts.  
+> This scenario highlights structured change management, security automation, and technical communication.
+
+---
+
+## 🗣️ Dialogue
+
+**Facilitator:**  
+Okay, next up on the list are a couple of vulnerability remediations for the server team.  
+Number one — removal of **insecure protocols**, and number two — removal of **insecure cipher suites**.  
+
+It looks like **Josh** from the **Risk Department** is working in conjunction with **Jimmy** from **Infrastructure** on this.  
+Jimmy, do you want to walk us through the technical aspects of the change being implemented?  
+
+**Jimmy:**  
+Normally I would, but do you mind giving this one to Josh?  
+He actually built the solution for us — we’re still getting used to the process.  
+
+**Josh:**  
+Yeah, I can explain this one.  
+
+Basically, **insecure cipher suites and protocols** mean that the system is still capable of negotiating or using deprecated algorithms.  
+If it connects to a server that only supports those outdated protocols, it may still use them — creating a security risk.  
+
+These settings are controlled via the **Windows Registry**, and the fix is fairly simple.  
+We wrote a **PowerShell script** that goes through and disables all insecure protocols and ciphers, then enables the ones that are considered modern and secure by today’s standards.  
+
+**Facilitator:**  
+That sounds good — but what if something goes wrong?  
+Do we have a rollback plan in place? Did you even think about that?  
+
+**Josh:**  
+Yes, absolutely.  
+First, we’re doing a **tiered deployment** — starting with a **pilot group**, then **pre-production**, and finally **production**.  
+
+On top of that, we’ve built an **automated rollback script** for each remediation.  
+If any issues arise, the script will restore the original protocol and cipher configurations.  
+
+**Facilitator:**  
+That’s good to hear. Since these are registry changes, I’m not too concerned.  
+
+**Josh:**  
+Exactly — simple, contained, and reversible.  
+
+**Facilitator:**  
+Any more questions from anyone?  
+
+*(silence)*  
+
+Alright, that wraps things up for this week’s CAP meeting.  
+See you all next week!  
+
+**All:**  
+See you later.  
+
+---
+
+## 🧩 Key Takeaways
+
+- ⚙️ **Security Hardening:** Removed deprecated SSL/TLS protocols and weak cipher suites.  
+- 💻 **Automation:** Implemented PowerShell scripts for consistent remediation and rollback.  
+- 🧪 **Controlled Deployment:** Used a phased rollout — pilot → pre-production → production.  
+- 🔄 **Rollback Strategy:** Automated reversion scripts ensure minimal operational risk.  
+- 🤝 **Cross-Team Collaboration:** Risk and Infrastructure teams coordinated on design and testing.  
+
+---
+
+### 🧾 Summary
+
+This discussion showcases how cybersecurity and infrastructure teams collaborate during **change management**.  
+It demonstrates the practical application of **secure configuration**, **automation**, and **rollback planning** — all key elements in maintaining a resilient enterprise environment.
 
 ---
 ### Step 10 ) Remediation Effort
