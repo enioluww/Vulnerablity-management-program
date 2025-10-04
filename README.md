@@ -1,4 +1,3 @@
-# Official [Cyber Range](http://joshmadakor.tech/cyber-range) Project
 
 # Vulnerability Management Program Implementation
 
@@ -34,7 +33,6 @@ _**Completion State:**_ a formal policy is enacted, stakeholder buy-in is secure
 - [Remediation Round 1: Outdated Wireshark Removal](#remediation-round-1-outdated-wireshark-removal)
 - [Remediation Round 2: Insecure Protocols & Ciphers](#remediation-round-2-insecure-protocols--ciphers)
 - [Remediation Round 3: Guest Account Group Membership](#remediation-round-3-guest-account-group-membership)
-- [Remediation Round 4: Windows OS Updates](#remediation-round-4-windows-os-updates)
 - [First Cycle Remediation Effort Summary](#first-cycle-remediation-effort-summary)
 
 ---
@@ -432,7 +430,7 @@ The server team used PowerShell scripts to remediate insecure protocols and ciph
 [Scan 3 - Ciphersuites and Protocols](https://drive.google.com/file/d/1Qc6-ezQvwReCGUZNtnva0kCZo_-zW-Sm/view?usp=drive_link)
 
 
-#### Remediation Round 3: Guest Account Group Membership & Windows OS Updates
+#### Remediation Round 3: Guest Account Group Membership
 
 The server team removed the guest account from the administrator group. A new scan confirmed remediation, and the results were exported for comparison.
 Windows updates were re-enabled and applied until the system was fully up to date. A final scan verified the changes  
